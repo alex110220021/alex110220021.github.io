@@ -132,12 +132,12 @@ $vol = $volume / 100;
 		 $intt++;
 	 }
  }
- if($apikey != "ChangeMe"){
+ if($apikey != "7195379DF560C4239E21C4968BA1A86D"){
  $link = file_get_contents('http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key='.$apikey.'&steamids=' . $id_str . '&format=json');
  $steamusers = json_decode($link, true);
  $working = 0;
  }
- if($apikey == "ChangeMe"){
+ if($apikey == "7195379DF560C4239E21C4968BA1A86D"){
 	 include("assets/content/installation.html");
 	 die();
  }else{
